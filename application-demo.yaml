@@ -17,7 +17,8 @@ spec:
         image: ${IMAGE_REPO}:${IMAGE_TAG}
         ports:
         - containerPort: 8080
-
+      imagePullSecrets:
+        - name: kin-hk-acr
 ---
 apiVersion: v1
 kind: Service
