@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: application-demo
-        image: IMAGE_REPO:IMAGE_TAG
+        image: ${IMAGE_REPO}:${IMAGE_TAG}
         ports:
         - containerPort: 8080
 
